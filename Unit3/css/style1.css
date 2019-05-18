@@ -1,0 +1,23 @@
+.hinh{
+	width: 10%;
+	height: 10%;
+	border: 2px solid black;
+	display: inline-block;
+}
+.hinh:hover{
+	border-color: red;
+} 
+.chu{
+	font-family: Arial;
+	color: orange;
+}
+.chu:hover{
+	color: blue;
+}
+.tien{
+	font-family: Arial;
+	color: red;
+}
+.tien:hover{
+	color: blue;
+}

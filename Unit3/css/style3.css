@@ -1,0 +1,240 @@
+.all{
+	margin: 0 auto;
+	max-width: 980px;
+}
+.nen{
+	background-color: white;
+}
+body{
+	font-family: Arial;
+	background-image: url(../images/tuyet1.jpg);
+	background-repeat: repeat;
+}
+.backgr>p{
+	margin: 0px;
+}
+#header{
+	width: 100%;
+	height:600px;
+	background-color: white;
+}
+#header img{
+	width: 99%;
+	height: 590px;
+	padding: 10px 10px 5px 6px;
+}
+#menu{
+	height: 35px;
+	background-color: #333333;
+	border-bottom: 3px solid #FF6600 ;
+
+}
+#menu div a{
+	text-decoration: none;
+	color: #FF6600;
+	line-height: 35px;
+	padding: 0px 10px 0px 10px;
+	border-right: 2px solid #222222;
+}
+#menu div a:hover{
+	color: blue;
+}
+.tenmenu{
+	display: inline;
+	border-color: #666666;
+	width: 200px;
+}
+#left{
+	width: 20%;
+	height: auto;
+	background-color: white;
+	float: left;
+	padding: 0px 5px;
+}
+#content{
+	width: 56%;
+	height: auto;
+	background-color: white;
+	float: left;
+	padding: 0px 5px;
+}
+#right{
+	width: 20%;
+	height: auto;
+	background-color: white;
+	float: right;
+	padding: 0px 5px;
+
+}
+#footer{
+	width: 100%;
+	height: 70px;
+	background-color: #333333;
+	clear: both;
+	border-top: 3px solid orange;
+}
+#footer1 {
+	text-align: center;
+	color: white;
+	padding-top: 7px;
+}
+.menubar img{
+	width: 177px;
+}
+.menubar{
+	height: auto;
+	width: 100%;
+	display: inline-block;
+}
+.backgr{
+	background-image: url(../images/menu_bar.gif);
+	background-size: cover;
+	height: 35px;
+	width: 100%;
+}
+.backgr >p{
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.backgr > p a{
+	padding-left:25px;
+	color:white;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	text-decoration: none;
+}
+.backgr >p a:hover{
+	color: blue;
+}
+.content_menu > p a{ 
+	text-decoration: none;
+	padding-left: 10px;
+	color: black;	
+}
+.content_menu > p a:hover{
+	color: blue;
+}
+.khungmn{
+	margin-bottom: 30px;
+	border: 1px solid #444444;
+}
+.anh12 img{
+	width: 100%;
+}
+.all2{
+	margin-bottom: 90px;
+}
+.content_mid1{
+	background-color: #FFCC66;
+	border: 2px;
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+}
+.content_mid1 p{
+	color: white;
+}
+.content_mid2{
+	 background-image: url(../images/main_bar_left.gif);
+	 background-size: cover;
+	 height: 35px;
+	 width: 100%;
+}
+.content_mid2 > p{
+	color: white;
+	padding-left: 10px;
+	padding-top: 8px;
+}
+.content_mid2 >p a{
+	text-decoration: none;
+	color: white;
+}
+.content_mid2 >p a:hover{
+	color: blue;
+}
+#giacong a{
+	text-decoration: none;
+	color: orange;
+
+}
+#giacong a:hover{
+	color: blue;
+}
+.text > p a:hover{
+	color: blue;
+}
+.text > p{
+	font-family: Arial;
+	font-size: 15px;
+}
+.text > p a{
+	color: orange;
+	text-decoration: none;
+}
+.imagemid2{
+	float: left;
+	margin-right: 5px;
+}
+.imagemid2 img{
+	width: 155px;
+	height: 108px;
+}
+.content_mid3{
+	background-image: url(../images/main_bar_right.gif);
+	background-size: cover;
+	 height: 35px;
+	 width: 100%;
+}
+.content_mid3 > p{
+	color: white;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 8px;
+}
+.content_mid3 > p a{
+	text-decoration: none;
+	color: white;
+	text-align: right;
+}
+.content_mid3 > p a:hover{
+	color: blue;
+}
+#dao_tao a{
+	color: orange;
+	text-decoration: none;
+}
+#dao_tao a:hover{
+	color: blue;
+}
+.text_mid3 > p a:hover{
+	color: blue;
+}
+.text_mid3 > p{
+	font-family: Arial;
+	font-size: 15px;
+}
+.text_mid3 > p a{
+	color: orange;
+	text-decoration: none;
+}
+#daotao a{
+	text-align: right;
+}
+.imagemid3{
+	float: right;
+	margin-right: 5px;
+}
+.imagemid3 img{
+	width: 155px;
+	height: 108px;
+	margin-bottom: 80px;
+}
+.all3{
+	margin-bottom: 80px;
+}
+.text_tieu_de >p {
+	text-align: right;
+	margin :0px;
+}
+.all4{
+	margin-bottom: 80px;
+}
