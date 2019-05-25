@@ -1,0 +1,24 @@
+#mien_bac li{
+	color: red;
+}
+div ul{
+	color:red;
+}
+div > ul {
+	color: green;
+}
+div + p{
+	color: yellow;
+}
+div ~ p{
+	color: yellow;
+}
+a[title='web26']{
+	color:gray;
+}
+#mien_bac li:nth-child(3){
+	color:pink;
+}
+#mien_nam li:nth-last-child(2){
+	color: orange;
+}

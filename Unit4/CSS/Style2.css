@@ -1,0 +1,65 @@
+/*==Reset CSS==*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30;
+}
+.menu {
+  background: #78b43d;
+}
+.menu li {
+  display: inline-block;
+  /*width: 100px;*/
+  height: 37px;
+  padding-top: 6px;
+  position: relative;
+}
+.menu li a{
+  color: white;
+  text-decoration: none;
+}
+#dm {
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  padding: 18px 10px 18px 10px;
+}
+.pc {
+	border-left: 1px solid #FFFFFF;
+	padding: 0px 10px 0px 10px;
+}
+.dropdown-menu {
+	display: none;
+	position: absolute;
+  /*text-align: center;*/
+  margin-top: 24px;
+  background-color: #aad862;
+}
+.dropdown-menu li {
+  border-bottom: 1px solid #78b43d;
+  width: 140px;
+  position: relative;
+}
+.menu li ul a{
+  color: black;
+}
+#menu2:hover .dropdown-menu {
+	display: block;
+}
+#dm:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu1 {
+  margin-left: 140px;
+  background: #78b43d;
+  display: none;
+  position: absolute;
+}
+.dropdown-menu li:hover .dropdown-menu1 {
+  display: block;
+}
+.dropdown-menu1 li {
+  border-bottom: 1px solid #aad862;
+}
