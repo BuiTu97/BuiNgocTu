@@ -1,0 +1,663 @@
+.menu{
+	width: 100%;
+	height: 40px;
+}
+#menu1{
+	width: 20%;
+	padding-left: 5%;
+	float: left;
+}
+.menu2{
+	width: 50%;
+	margin-right: 10%;
+	float: right;
+}
+.mau{
+	color: #ed512f;
+	font-weight: bold;
+	font-size: 30px;
+}
+.tensau{
+	font-weight: bold;
+	font-size: 30px;
+	color: black;
+}
+.menuli li{
+	list-style: none;
+	padding-right: 8%;
+	float: left;
+	line-height: 40px;
+}
+.menuli li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+.menuli li a:hover{
+	color: #a2abaa;
+}
+.doimau{
+	color: #ed512f;
+}
+.mau1{
+	color: black;
+}
+.slider{
+	width: 100%;
+	height: 600px;
+	position: relative;
+	margin-top: 3%;
+}
+.slide img{
+	width: 100%;
+}
+
+.cac-slide{
+	width: 100%;
+	overflow: hidden;
+}
+.slide{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	opacity: 0;
+	visibility: hidden;
+}
+.slide.active{
+	opacity: 1;
+	visibility: visible;
+}
+.nut-slide span{
+	color: #222222;
+	font-size: 60px;
+}
+#btn-pre{
+	position: absolute;
+	top: 40%;
+	left: 3%;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0.5;
+}
+#btn-pre:hover{
+	border-radius: 20%;
+	background-color: rgb(240,248,255);
+}
+#btn-next{
+	position: absolute;
+	top: 40%;
+	right: 3%;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0.5;
+}
+#btn-next:hover{
+	border-radius: 20%;
+	background-color: rgb(240,248,255);
+}
+.dauchuyen{
+	position: absolute;
+	z-index: 10;
+	width: 5%;
+	bottom: 5%;
+	left: 50%;
+	margin-left: -2.5%;
+}
+.dauchuyen li{
+	float: left;
+	padding-right: 20%;
+	background-color: white;
+	opacity: 0.6;
+	cursor: pointer;
+}
+.clear{
+	clear: both;
+}
+#poc a{
+	color: #343434;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#poc a:hover{
+	color: #a2abaa;
+}
+#bcs a{
+	color: #343434;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: font-size 1s;
+}
+#bcs a:hover{
+	color: #a2abaa;
+	font-size: 35px;
+}
+.cresolution{
+	width: 100%;
+	height: auto;
+	margin-top: 8%;
+}
+.cre1{
+	width: 23%;
+	margin: 0 auto;
+	float: left;
+	padding-left: 1.7%;
+	cursor: pointer;
+}
+.iconcd{
+	font-size: 60px;
+	color: #ed512f;
+	transition: font-size 1s;
+}
+.iconcd:hover{
+	font-size: 70px;
+}
+.cre1 p a{
+	text-decoration: none;
+	color: #343434;
+	font-weight: bold;
+}
+.cre1 p a:hover{
+	color: #a2abaa;
+}
+.mainfeatures{
+	width: 100%;
+	margin-top: 20%;
+}
+.text2{
+	margin-top: 3%;
+}
+.text2 p{
+	font-size: 16px;
+}
+.anhmainfeatures{
+	width: 100%;
+	height: auto;
+	margin-top: 3%;
+}
+.anhmf1{
+ 	width: 40%;
+ 	margin: 0 auto;
+ 	float: left;	
+ 	padding-left: 8%;
+}
+.seoeu{
+	width: 100%;
+	margin-top: 7%;
+	margin-bottom: 28%;
+}
+.seo{
+	width: 26%;
+	height: auto;
+	margin: 0 auto;
+	float: left;
+	padding-left: 6%;
+	cursor: pointer;
+}
+.iconseo{
+	width: 20%;
+	float: left;
+	margin: 0 auto;
+	margin-top: 15%;
+}
+.ndseo{
+	width: 80%;
+	margin: 0 auto;
+	margin-left: 15%;
+}
+.tdseo a{
+	font-size: 20px;
+	color: #343434;
+	text-decoration: none;
+	font-weight: bold;
+}
+.tdseo a:hover{
+	color: #a2abaa;
+}
+.easily{
+	width: 100%;
+	height: auto;
+	background-color: #ed512f;
+	margin-top: 20%;
+}
+.ndeasily{
+	margin-top: 20%;
+	width: 100%;
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+#p1 a{
+	text-decoration: none;
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+}
+#p2{
+	font-size: 16px;
+	color: white;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#bt1{
+	color:black;
+	border-radius: 10%;
+	cursor: pointer;
+}
+
+.sayaboutus{
+	width: 100%;
+	height: auto;
+	padding-bottom: 8%;
+}
+.tdsayaboutus{
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+.anh a img{
+	border-radius: 15%;
+}
+.cre2{
+	width: 23%;
+	margin: 0 auto;
+	float: left;
+	padding-left: 1.7%;
+	cursor: pointer;
+}
+.cre2 p a{
+	text-decoration: none;
+	color: #343434;
+	font-weight: bold;
+}
+.cre2 p a:hover{
+	color: #a2abaa;
+}
+.footer{
+	width: 100%;
+	height: auto;
+	background-color: 
+}
+.ftt{
+	width: 100%;
+	margin: 0 auto;
+	background-color: #343434;
+	margin-top: 20%;
+}
+.ft1{
+	width: 25%;
+	margin: 0 auto;
+	float: left;
+	padding-left: 7%;
+	padding-bottom: 3%;
+}
+#multi a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	padding-top: 10%;
+	padding-right:3%;
+}
+#iconfter a i{
+	padding-top: 3%;
+	padding-right: 5%;
+	color: white;
+	font-size: 20px;
+	padding-bottom: 10%;
+}
+.textft a{
+	text-decoration: none;
+	color: white;
+}
+.textft a:hover{
+	color: #a2abaa;
+}
+#multi a:hover{
+	color: #a2abaa;
+}
+.ftd{
+	width: 100%;
+	height: auto;
+	background-color: black;
+}
+.fttrai{
+	margin-top: 0px;
+	width: 40%;
+	float: left;
+	margin: 0 auto;
+	color: white;
+	padding-left: 10%;
+}
+.ftphai{
+	width: 40%;
+	float: right;
+	margin-left: 5%;
+}
+.menufooter li{
+	list-style: none;
+	float: left;
+	padding-left: 7%;
+}
+.menufooter li a{
+	text-decoration: none;
+	color: white;
+	/*padding-left: 10%;*/
+}
+.menufooter li a:hover{
+	color: #a2abaa;
+}
+@media screen and (min-width: 601px) and (max-width: 768px) {
+
+.menu2{
+	width: 60%;
+}
+.menuli li{
+	padding-right: 3%;
+}
+.menuli li a{
+	font-size: 11px;
+}
+.slider{
+	height: 400px;
+	margin-top: 3%;
+}
+.anhmf1{
+ 	width: 80%;
+	margin-left: 5%;
+}
+.nut-slide span{
+	display: none;
+}
+.seo{
+	width: 90%;
+}
+.iconseo{
+	width: 20%;
+	float: left;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.easily{
+	margin-top: 60%;
+}
+.cre2{
+	width: 90%;
+}
+.ftt{
+	margin-top: 150%;
+}
+.ft1{
+	width: 90%;
+}
+.fttrai p{
+	font-size: 13px;
+}
+.fttrai{
+	
+	width: 50%;
+	padding-left: 0%;
+}
+.ftphai{
+	width: 70%;
+}
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+.menu2{
+	display: none;
+}
+.nut-slide span{
+	display: none;
+}
+.slider{
+	height: 200px;
+	margin-top: 3%;
+}
+.cre1{
+	width: 90%;
+	margin: 0 auto;
+}
+.anhmf1 a img{
+	width: 90%;	
+}
+.anhmf1{
+ 	width: 80%;
+	margin-left: 5%;
+}
+.seo{
+	width: 90%;
+}
+.ndseo p{
+	font-size: 13px;
+}
+.iconcd{
+	font-size: 40px;
+}
+.ndseo{
+	width: 90%;
+	margin: 0 auto;
+	margin-left: 15%;
+}
+.easily{
+	margin-top: 160%;
+}
+.cre2{
+	width: 90%;
+}
+.ndaboutus a{
+	font-size: 13px;
+}
+.ftt{
+	margin-top: 450%;
+}
+.ft1{
+	width: 90%;
+}
+.fttrai p{
+	font-size:  13px;
+}
+.fttrai{
+	width: 80%;
+	padding-left: 0%;
+}
+.ftphai{
+	width: 120%;
+	font-size: 13px;
+	margin-bottom: 3%;
+}
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+.menu2{
+	display: none;
+}
+.nut-slide span{
+	display: none;
+}
+.slider{
+	height: 200px;
+	margin-top: 3%;
+}
+.cre1{
+	width: 90%;
+	margin: 0 auto;
+}
+.anhmf1 a img{
+	width: 90%;	
+}
+.anhmf1{
+ 	width: 80%;
+	margin-left: 5%;
+}
+.seo{
+	width: 90%;
+}
+.ndseo p{
+	font-size: 16px;
+}
+.iconcd{
+	font-size: 40px;
+}
+.ndseo{
+	width: 90%;
+	margin: 0 auto;
+	margin-left: 15%;
+}
+.easily{
+	margin-top: 160%;
+}
+.cre2{
+	width: 90%;
+}
+.ndaboutus a{
+	font-size: 13px;
+}
+.ftt{
+	margin-top: 450%;
+}
+.ft1{
+	width: 90%;
+}
+.fttrai p{
+	font-size:  13px;
+}
+.fttrai{
+	width: 80%;
+	padding-left: 0%;
+}
+.ftphai{
+	width: 120%;
+	font-size: 13px;
+	margin-bottom: 3%;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+
+.menu2{
+	width: 65%;
+}
+.menuli li{
+	padding-right: 3%;
+}
+.menuli li a{
+	font-size: 10px;
+}
+.slider{
+	height: 400px;
+	margin-top: 3%;
+}
+.anhmf1{
+ 	width: 80%;
+	margin-left: 5%;
+}
+.nut-slide span{
+	display: none;
+}
+.seo{
+	width: 90%;
+}
+.iconseo{
+	width: 20%;
+	float: left;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.anhmf1 a img{
+	width: 90%;	
+}
+.easily{
+	margin-top: 100%;
+}
+.cre2{
+	width: 90%;
+}
+.ftt{
+	margin-top: 210%;
+}
+.ft1{
+	width: 90%;
+}
+.fttrai p{
+	font-size: 13px;
+}
+.fttrai{
+	
+	width: 50%;
+	padding-left: 0%;
+}
+.ftphai{
+	width: 70%;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+.menu2{
+	width: 60%;
+}
+.menuli li{
+	padding-right: 3%;
+}
+.menuli li a{
+	font-size: 11px;
+}
+.slider{
+	height: 400px;
+	margin-top: 3%;
+}
+.anhmf1{
+ 	width: 80%;
+	margin-left: 5%;
+}
+.nut-slide span{
+	display: none;
+}
+.seo{
+	width: 90%;
+}
+.iconseo{
+	width: 20%;
+	float: left;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+.easily{
+	margin-top: 60%;
+}
+.cre2{
+	width: 90%;
+}
+.ftt{
+	margin-top: 150%;
+}
+.ft1{
+	width: 90%;
+}
+.fttrai p{
+	font-size: 13px;
+}
+.fttrai{
+	
+	width: 50%;
+	padding-left: 0%;
+}
+.ftphai{
+	width: 70%;
+}
+}
+@media screen and (min-width: 1025px){
+
+.anhmf1 a img{
+	width: 90%;	
+}
+.menu2{
+	width: 60%;
+}
+.menuli li{
+	padding-right: 3%;
+}
+.menuli li a{
+	font-size: 13px;
+}
+.iconseo a i{
+	font-size: 45px;
+}
+
+}
