@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick="hinh1()">Hinh 1</button>
+	<button onclick="hinh2()">Hinh 2</button>
+	<button onclick="hinh3()">Hinh 3</button>
+	<button onclick="hinh4()">Hinh 4</button>
+	<script type="text/javascript">
+		function hinh4(){
+			var n = prompt("nhập vào số n: ");
+			for(var i = 0;i<n;i++){
+				for(var j = i+1;j<n;j++){
+					document.write("*");
+				}
+				document.write("*<br>")
+			}
+		}
+		function hinh2(){
+			var m = prompt("nhập vào m: ");
+			var n = prompt("nhập vào n: ");
+			for(var i = 1; i<=m;i++){
+				for(var j = 1;j<n;j++){
+					document.write("*");
+				}
+				document.write("*<br>");
+			}
+		}
+		function hinh3(){
+			var n = prompt("nhập vào số n: ");
+			var m = prompt("nhập vào số m: ");
+			for(var i = 1;i<=n;i++){
+				for(var k = 1;k<=m;k++){
+					if(i==1||k==1||i==n||k==n){
+						document.write("*")
+					}
+					else{
+						document.write("&nbsp;&nbsp;")
+					}
+				}
+			document.write("<br>")
+			}
+		}
+		function hinh1(){
+			var n = prompt("nhập vào số n: ");
+			for(var i = 1;i<=n;i++){
+				for(var j = 1;j<=i;j++){
+					document.write("*");
+				}
+				document.write("<br>")
+			}
+		}
+		
+	</script>
+</body>
+</html>

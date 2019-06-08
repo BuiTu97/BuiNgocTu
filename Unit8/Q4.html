@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		do{
+			var n = prompt("nhập vào số n: ");
+			n = parseInt(n);
+		}while(n<0);
+		do{
+			var k = prompt("nhập vào số k: ");
+			k = parseInt(k);
+		}while(k<0);
+		do{
+			var m = prompt("nhập vào số m: ");
+			m = parseInt(m);
+		}while(m<n);
+
+		var s = 0;
+		for( var i = n+1;i<m;i++){
+			if(i%k==0){
+				s = s+i;
+			}
+		}
+		document.write("tổng các số chia hết cho "+ k + " là : "+ s);
+	</script>
+</body>
+</html>
