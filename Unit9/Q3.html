@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript">
+		function coChuMacDinh(){
+			var macdinh = document.getElementById('content');
+			macdinh.style.fontSize = '16px';
+		}
+		function coChuLon(){
+			var t = document.getElementById('macdinh').value;
+			document.getElementById('content').style.fontSize = t + '5%';
+			// document.getElementById('content').style.fontSize = t;
+			// var lon = document.getElementById('content');
+			// 	lon.style.fontSize = t + '5%';
+			// document.getElementById()			
+		}
+	</script>
+	<title>Document</title>
+	<style type="text/css">
+		.khung{
+			width: 20%;
+			border: 2px solid black;
+		}
+		#text p{
+			font-weight: bold;
+		}
+		#nut{
+			margin-bottom: 5%;
+		}
+		.khung1{
+			width: 50%;
+			border: 2px solid black;
+			margin-top: 2%;
+		}
+	</style>
+</head>
+<body>
+	<div class="khung">
+		<center>
+			<div id="text"><p>Cỡ Chữ</p></div>
+			<div id="nut">
+				<input type="button" id="macdinh" name="" value="16" onclick="coChuMacDinh()">
+				<input type="button" id="lon" name="" value="Lớn" onclick="coChuLon()">
+				<input type="button" id="nho" name="" value="Nhỏ" onclick="coChuNho()">
+			</div>
+		</center>
+	</div>
+	<div class="khung1">
+		<p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia delectus distinctio minus dicta quos aut facere amet soluta. Sed aut ullam deserunt cum iusto, enim doloremque blanditiis saepe natus laboriosam.</p>
+	</div>
+</body>
+</html>

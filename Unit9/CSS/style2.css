@@ -1,22 +1,31 @@
 .check{
-	width: 70%;
+	width: 60%;
 	height: 50px;
 	margin: 0 auto;
 	border: 1px solid black;
+	background-color: #6699FF;
 }
-#checkbox1{
+.check:hover{
+	background-color: #00CC99;
+}
+.checkbox1{
 	width: 5%;
 	float: left;
-	margin-top: 1.5%;
+	margin-top: 1.8%;
 	border-right: 1px solid black;
 }
 #text{
 	float: right;
-	width: 80%;
+	width: 85%;
 	height: auto;
-	margin-right: 6%;
+	margin-right: 8%;
 }
 #thep{
-	margin-top: 0px;
-	
+	margin-top: 2%;
+
+}
+#nutcheck{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 3%;
 }

@@ -2,21 +2,113 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script type="text/javascript">
+		function checkall(){
+			var checkbox = document.getElementsByClassName('checkk');
+			for(var i = 0; i<checkbox.length; i++ ){
+				if(checkbox[i].type == "checkbox") {
+  					checkbox[i].checked = true;
+    	}
+	}
+}
+		function uncheckall(){
+			var uncheckbox = document.getElementsByClassName('checkk');
+			for(var i = 0; i<uncheckbox.length; i++ ){
+				if(uncheckbox[i].checked == true) {
+  					uncheckbox[i].checked = false;
+    	}
+	}
+}
+	</script>
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="CSS/style2.css">
 </head>
 <body>
-	<!-- <center> -->
 	<div class="check">
 		<center>
-		<div id="checkbox1">
-			<input type="checkbox" name="" value="">
+		<div class ="checkbox1">
+			<input  type="checkbox" class="checkk" name="check" value="">
 		</div>
 		</center>
 		<div id="text">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt provident, consectetur labore tempore perferendis, praesentium?</p>
+			<p id="thep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ducimus.</p>
 		</div>
 	</div>
-	<!-- </center> -->
+	<div class="check">
+		<center>
+		<div class ="checkbox1">
+			<input type="checkbox" class="checkk" name="check" value="">
+		</div>
+		</center>
+		<div id="text">
+			<p id="thep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ducimus Lorem ipsum dolor..</p>
+		</div>
+	</div>
+	<div class="check">
+		<center>
+		<div class ="checkbox1">
+			<input type="checkbox" class="checkk" name="check" value="">
+		</div>
+		</center>
+		<div id="text">
+			<p id="thep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ducimus. Lorem ipsum.</p>
+		</div>
+	</div>
+	<div class="check">
+		<center>
+		<div class ="checkbox1">
+			<input type="checkbox" class="checkk" name="check" value="">
+		</div>
+		</center>
+		<div id="text">
+			<p id="thep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ducimus Lorem ipsum dolor sit..</p>
+		</div>
+	</div>
+	<div class="check">
+		<center>
+		<div class ="checkbox1">
+			<input type="checkbox"  class="checkk" name="check" value="">
+		</div>
+		</center>
+		<div id="text">
+			<p id="thep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ducimus.</p>
+		</div>
+	</div>
+	<div class="check">
+		<center>
+		<div class ="checkbox1">
+			<input type="checkbox" class="checkk" name="check" value="">
+		</div>
+		</center>
+		<div id="text">
+			<p id="thep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ducimus lorem.</p>
+		</div>
+	</div>
+	<div class="check">
+		<center>
+		<div class ="checkbox1">
+			<input type="checkbox" class="checkk" name="check" value="">
+		</div>
+		</center>
+		<div id="text">
+			<p id="thep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ducimus Lorem ipsum..</p>
+		</div>
+	</div>
+	<div class="check">
+		<center>
+		<div class ="checkbox1">
+			<input type="checkbox" class="checkk" name="check" value="">
+		</div>
+		</center>
+		<div id="text">
+			<p id="thep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ducimus.</p>
+		</div>
+	</div>
+	<div class ="checkbox1">
+		<input type="button" id="btn1" name="" onclick="checkall()" value="Check All" 
+		> 
+		<input type="button" name="" id="btn2" onclick="uncheckall()" value="UnCheck All" >
+	</div>
+	
 </body>
 </html>
