@@ -8,12 +8,16 @@
 			macdinh.style.fontSize = '16px';
 		}
 		function coChuLon(){
-			var t = document.getElementById('macdinh').value;
-			document.getElementById('content').style.fontSize = t + '5%';
-			// document.getElementById('content').style.fontSize = t;
-			// var lon = document.getElementById('content');
-			// 	lon.style.fontSize = t + '5%';
-			// document.getElementById()			
+			var t = document.getElementById('content').style.fontSize;
+			t = parseInt(t);
+			t = t+t*0.4;
+			document.getElementById('content').style.fontSize = t + 'px';
+		}
+		function coChuNho(){
+			var t = document.getElementById('content').style.fontSize;
+			t = parseInt(t);
+			t = t-t*0.4;
+			document.getElementById('content').style.fontSize = t + 'px';
 		}
 	</script>
 	<title>Document</title>
@@ -40,14 +44,14 @@
 		<center>
 			<div id="text"><p>Cỡ Chữ</p></div>
 			<div id="nut">
-				<input type="button" id="macdinh" name="" value="16" onclick="coChuMacDinh()">
+				<input type="button" id="macdinh" name="" value="Mặc Định" onclick="coChuMacDinh()">
 				<input type="button" id="lon" name="" value="Lớn" onclick="coChuLon()">
 				<input type="button" id="nho" name="" value="Nhỏ" onclick="coChuNho()">
 			</div>
 		</center>
 	</div>
 	<div class="khung1">
-		<p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia delectus distinctio minus dicta quos aut facere amet soluta. Sed aut ullam deserunt cum iusto, enim doloremque blanditiis saepe natus laboriosam.</p>
+		<p id="content" style="font-size: 16px" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia delectus distinctio minus dicta quos aut facere amet soluta. Sed aut ullam deserunt cum iusto, enim doloremque blanditiis saepe natus laboriosam.</p>
 	</div>
 </body>
 </html>
