@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+</head>
+<body>
+	<form>
+		<div class="allbai">
+			<div class="all">
+				<div class="ho_ten">
+					<div class="tieude">
+						<p>Họ Và Tên</p>
+					</div>
+					<div class="ten">
+						<input type="text" id="name" name="" placeholder="Nhập vào họ tên..."><span class="errors" ></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="ho_ten">
+					<div class="tieude">
+						<p>Giới Tính</p>
+					</div>
+					<div class="gt">
+						<input checked type="radio" id="gioitinh" name="gioitinh">Nam
+						<input type="radio" name="gioitinh">Nữ<span class="errors"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="ho_ten">
+					<div class="tieude">
+						<p>Email</p>
+					</div>
+					<div class="ten">
+						<input type="email" id="email" name="" placeholder="Nhập vào email..."><span class="errors"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="ho_ten">
+					<div class="tieude">
+						<p>Số điện thoại</p>
+					</div>
+					<div class="ten">
+						<input type="tel" name="" id="sdt" placeholder="Nhập vào số điện thoại..."><span class="errors"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="ho_ten">
+					<div class="tieude">
+						<p>Mật khẩu</p>
+					</div>
+					<div class="ten">
+						<input type="password" name="" id="matkhau" placeholder="Nhập vào mật khẩu..."><span class="errors"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="ho_ten">
+					<div class="tieude">
+						<p>Xác nhận mật khẩu</p>
+					</div>
+					<div class="ten">
+						<input type="password" name="" id="xn_matkhau" placeholder="Nhập vào mật khẩu..."><span class="errors"></span>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="butt">
+				<button type="button">Đăng kí</button>
+				<button type="reset">Làm mới</button>
+			</div>
+		</div>
+	</form>
+	<script type="text/javascript">
+		var button_dk = document.getElementsByTagName('button')[0];
+		errors= document.getElementsByClassName("errors");
+		errors[1]="";
+		var flag=true;
+		button_dk.addEventListener('click', function(){
+			var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			var csdt = /(0|84)+(9|3|8)+([0-9]{8})\b/g;
+
+			var ten = document.getElementById('name').value;
+			if(ten==""){
+				errors[0].innerHTML = "  Yêu cầu nhập đầy đủ họ tên";
+				flag=false;
+			}else if(ten.length>0 && ten.length<=8){
+				errors[0].innerHTML = " Tên không được nhỏ hơn hoặc bằng 8 kí tự";flag=false;
+			}else if(!isNaN(ten)){
+				errors[0].innerHTML = " Tên không được nhập số";flag=false;
+			}else{
+				errors[0].innerHTML = "";
+			}
+
+
+
+			var sdt = document.getElementById('sdt').value;
+			if(sdt==""){
+				errors[3].innerHTML = "  Yêu cầu nhập số điện thoại";flag=false;
+			}else if(sdt.length<10||sdt.length>10){
+				errors[3].innerHTML = " Số điện thoại không được nhỏ hơn hoặc lớn hơn 10 số";flag=false;
+			} else if(isNaN(sdt)){
+				errors[3].innerHTML = "  số điện thoại phải nhập số";flag=false;
+			}else if(!csdt.test(sdt)){
+				errors[3].innerHTML = " Số điện thoại sai định dạng"
+			}else{
+				errors[3].innerHTML = "";
+			}
+
+
+
+			var email = document.getElementById('email').value;
+			if(email==""){
+				errors[2].innerHTML = "  Yêu cầu nhập email";flag=false;
+			}else if(!re.test(email)){
+				errors[2].innerHTML = "  email sai định dạng";flag=false;
+			}else{
+				errors[2].innerHTML = "";
+			}
+
+
+
+			var matkhau = document.getElementById('matkhau').value;
+
+			if(matkhau==""){
+				errors[4].innerHTML = "  Yêu cầu nhập mật khẩu";flag=false;
+			}else if( matkhau.length>0 && matkhau.length <6){
+				errors[4].innerHTML = "  Mật khẩu phải nhiều hơn 6 kí tự";flag=false;
+			}else{
+				errors[4].innerHTML = "";
+			}
+
+
+			var xn_matkhau = document.getElementById('xn_matkhau').value;
+			if(xn_matkhau==""){
+				errors[5].innerHTML = " Yêu cầu nhập mật khẩu";flag=false;
+			}else if(xn_matkhau != matkhau){
+				errors[5].innerHTML = " Mật khẩu phải trùng với mật khẩu ở trên";flag=false;
+			}else{
+				errors[5].innerHTML = "";
+			}
+		
+			if(flag == true){
+				alert("THÀNH CÔNG ")
+			}
+		});
+	</script>
+</body>
+</html>

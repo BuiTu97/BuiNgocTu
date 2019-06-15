@@ -1,0 +1,46 @@
+.allbai{
+	background-image: url(../images/mau-background-don-gian-02-1024x768.jpg);
+	background-repeat: repeat;
+}
+.all{
+	width: 70%;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 4%;
+	padding-left: 10%;
+
+}
+.ho_ten{
+	width: 90%;
+}
+.tieude{
+	width: 20%;
+	float: left;
+	font-weight: bold;
+}
+.ten{
+	float: right;
+	width: 70%;
+	padding-top: 2%;
+}
+.clear{
+	clear: both;
+}
+.ten input{
+	width: 60%;
+}
+.gt{
+	float: right;
+	width: 70%;
+	padding-top: 2%;
+}
+.butt{
+	padding-top: 3%;
+	padding-left: 45%;
+}
+.butt button{
+	background-color: red;
+}
+.errors{
+	color: red;
+}

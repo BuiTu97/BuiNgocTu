@@ -1,0 +1,83 @@
+*{
+	padding: 10px 2px  0px 2px;
+	margin: 0;
+}
+ .galleryContainner{
+ 	width: 100%;
+ 	height: 700px;
+ 	max-width: 1500px;
+ 	padding: 10px;
+ 	margin: 0 auto;
+}
+ .slideShowContainer{
+ 	width: 100%;
+ 	height: 90%;
+ 	overflow: hidden;
+ 	position: relative;
+}
+ .imagesHolder{
+ 	width: 100%;
+ 	height: 100%;
+ 	position: absolute;
+}
+ .imagesHolder img{
+ 	width: 100%;
+ 	height: 100%;
+}	
+ .arrow{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+}
+.arrow span{
+	color: black;
+	font-size: 30px;
+	padding-bottom: 1%;
+}
+#btn-pre{
+	position: absolute;
+	top: 40%;
+	left: 3%;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0.5;
+}
+#btn-pre:hover{
+	border-radius: 20%;
+	background-color: rgb(240,248,255);
+}
+#btn-next{
+	position: absolute;
+	top: 40%;
+	right: 3%;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0.5;
+}
+#btn-next:hover{
+	border-radius: 20%;
+	background-color: rgb(240,248,255);
+}
+.galleryContainner .slideShowContainer .imagesHolder .contentText{
+	display: none;
+}
+.contentHolder{
+	position: absolute;
+	left: 0.6%;
+	bottom: 0.2%;
+	z-index: 1000;
+	color: white;
+	font-family: 'Time new Roman';
+	font-size: 20px;
+	width: 99%;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	overflow: hidden;
+	background: #00000047;
+	cursor: pointer;
+}
+.contentText{
+	
+}
