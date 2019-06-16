@@ -32,7 +32,7 @@
 }
 .arrow span{
 	color: black;
-	font-size: 30px;
+	font-size: 50px;
 	padding-bottom: 1%;
 }
 #btn-pre{
@@ -59,25 +59,23 @@
 	border-radius: 20%;
 	background-color: rgb(240,248,255);
 }
-.galleryContainner .slideShowContainer .imagesHolder .contentText{
-	display: none;
-}
-.contentHolder{
+.dots{
+
 	position: absolute;
-	left: 0.6%;
-	bottom: 0.2%;
 	z-index: 1000;
-	color: white;
-	font-family: 'Time new Roman';
-	font-size: 20px;
-	width: 99%;
-	text-align: center;
-	height: 50px;
-	line-height: 50px;
-	overflow: hidden;
-	background: #00000047;
-	cursor: pointer;
+	right: 9%;
+	bottom: 20%;
 }
-.contentText{
-	
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 30%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
 }
