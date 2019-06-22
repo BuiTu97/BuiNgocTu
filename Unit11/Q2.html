@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Style2.css">
+	<script type="text/javascript" src="JS/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="CSS/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div id="myDIV" class="header">
+			<h2 style="margin:5px">My To Do List</h2>
+			<input type="text" id="myInput" placeholder="write the purpose...">
+			<span class="addBtn">Add</span>
+			<div class="clear"></div>
+		</div>
+		<table class="bang" >
+			
+		</table>
+	</div>
+</body>
+<script type="text/javascript">
+	$(".addBtn").click(function(){
+		var input = $("input").val();
+		if(input == ""){
+			alert("input empty")
+		}else{
+		$(".bang").append(`
+			<tr class = "hang">
+			<td class = "check"></td>
+			<td class = "content">`+input+`</td>
+			<td class = "daux">&times;</td>
+			</tr>`
+			);
+		 input = $("input").val("");
+		 }
+	});
+
+	$("body").on("click",".daux", function(){
+		$(this).parent().remove();
+	});
+
+	$("body").on("click",".hang",function(){
+		var check = $(this).children('.check').html()
+		if($(check) == ""){
+			$(this).children('.check').html('<i class="fa fa-check" aria-hidden="true"></i>');
+			$(this).css("background","black");
+			$(this).children(".check").css("color","black");
+			$(this).children(".content").css("textDecoration","line-through");
+			$(this).children(".daux").css("color","pink");
+		}else{
+			$(this).children(".check").html("");
+			$(this).css("background","white");
+			$(this).children(".content").css("textDecoration","none");
+			$(this).children(".daux").css("color","black");
+		}
+	});
+</script>
+</html>

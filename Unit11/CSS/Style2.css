@@ -1,0 +1,70 @@
+.container {
+  width: 600px;
+  margin: auto;
+}
+* {
+  box-sizing: border-box;
+}
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.addBtn:hover {
+  background-color: #bbb;
+}
+.hang{
+  cursor: pointer;
+  background-color: #BBBBBB;
+}
+.hang:hover{
+  background-color:   #CCCCCC;
+}
+.bang{
+  width: 100%;
+}
+.daux{
+  width: 2%;
+  cursor: pointer;
+  padding-right:0%;
+}
+.daux:hover{
+  color: red;
+}
+.check{
+  width: 2%;
+}
+.check:hover{
+  color: red;
+}
+.content{
+  width: 96%;
+}
+.
+.clear{
+  clear: both;
+}

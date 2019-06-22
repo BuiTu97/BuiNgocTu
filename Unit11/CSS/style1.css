@@ -1,0 +1,76 @@
+.main{
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+	background-image: url(../img/nen1.jpg);
+}
+.khoi{
+	width: 90%;
+	margin: 0 auto;
+}
+#nut_bam i{
+	font-size: 150%;
+	cursor: pointer;
+}
+p{
+	font-weight: bold;
+	font-size: 18px;
+	background-color: #C0C0C0;
+}
+.annd{
+	display: none;
+}
+.content{
+	width: 93.5%;
+	background-color: #D3D3D3;
+}
+button{
+	color: #00CC33;
+	background-color: #33FF66;
+}
+.alltd{
+	width: 100%;
+	position: relative;
+	margin-bottom: 5%;
+}
+.tieude #p1{
+	width: 80%;
+	font-size: 40px;
+	font-family: Time New Roman;
+	font-weight: bold;
+	padding: 0px;
+	color: white;
+	padding-top: 10%;
+	padding-left: 10%;
+}
+.tieude #p2{
+	width: 80%;
+	color: green;
+	font-size: 17px;
+	padding-left: 10%;
+	margin-bottom: 5%;
+}
+.tieude{
+	width: 30%;
+	height: auto;
+}
+.clear{
+	clear: both;
+}
+#p3{
+	position: absolute;
+	left: 24%;
+	top: 43%;
+	width: 40%;
+	color: green;
+	font-weight: bold;
+	font-size: 30px;
+}
+.div_tren{
+	background-color: #666666;
+	border: 1px solid black;
+	border-radius: 5%;
+}
+.content{
+	padding: 3%;
+}
