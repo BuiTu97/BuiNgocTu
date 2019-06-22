@@ -43,18 +43,18 @@
 	});
 
 	$("body").on("click",".hang",function(){
-		var check = $(this).children('.check').html()
-		if($(check) == ""){
+		// var check = $(this).children('.check').html();
+		if($("check") == ""){
+			// alert("noting to say")
+			$(this).children(".check").html("");
+			$(this).children(".content").css("textDecoration","none");
+			$(this).children(".daux").css("color","black");
+		}else{
+			// alert("đừng nói nữa")
 			$(this).children('.check').html('<i class="fa fa-check" aria-hidden="true"></i>');
-			$(this).css("background","black");
 			$(this).children(".check").css("color","black");
 			$(this).children(".content").css("textDecoration","line-through");
 			$(this).children(".daux").css("color","pink");
-		}else{
-			$(this).children(".check").html("");
-			$(this).css("background","white");
-			$(this).children(".content").css("textDecoration","none");
-			$(this).children(".daux").css("color","black");
 		}
 	});
 </script>
