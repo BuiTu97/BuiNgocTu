@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+	<link rel="stylesheet" type="text/css" href="CSS/animate.css">
+	<script type="text/javascript" src="JS/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="JS/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="JS/jquery.steps.js"></script>
+	<script type="text/javascript" src="JS/js1.js"></script>
+	<script type="text/javascript" src="JS/wow.min.js"></script>
+</head>
+<body>
+	<div id="all">
+
+		<div class="tab">
+			<form id="form1" action="#" name="form">
+				<div class="tabtr">
+					<h3 id="color">Account</h3>
+				</div>
+				<div class="section tab1">
+
+					<div>
+						<label for="userName" class="label">User name *</label> 
+						<input id="userName" name="userName" type="text" class="required" placeholder="Nhập vào Username">
+					</div>
+
+					<div>
+						<label for="password" class="label">Password *</label> 
+						<input id="password" name="password" type="text" class="required" placeholder="Nhập vào mật khẩu">
+					</div>
+
+					<div>
+						<label for="confirm" class="label">Confirm Password *</label>
+						<input id="confirm" name="confirm" type="text" class="required" placeholder="nhập vào mật khẩu">
+					</div>
+					
+					<p>(*) Mandatory</p>
+					<div class="btn">
+						<input type="submit" value="Next" name="" class="next" id="next1">
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+		<div class="tab">
+			<form id="form2" action="#" name="form">
+				<div class="tabtr">
+					<h3>Profile</h3>
+				</div>
+				<div class="section">
+					<div>
+						<label for="name" class="label">First name *</label> 
+						<input id="name" name="name" type="text" class="required" placeholder="nhập vào tên">
+					</div>
+					<div>
+						<label for="surname" class="label">Last name *</label> 
+						<input id="surname" name="surname" type="text" class="required" placeholder="nhập vào họ">
+					</div>
+					<div>
+						<label for="email" class="label">Email *</label> 
+						<input id="email" name="email" type="email" class="required email" placeholder="nhập vào email">
+					</div>
+					<div>
+						<label for="address" class="label">Address *</label> 
+						<input id="address" name="address" type="text" placeholder="nhập vào địa chỉ ">
+					</div>
+					<div>
+						<label for="age" class="label">Age *</label> 
+						<input id="age" name="age" type="number" class="required" placeholder="nhập vào tuổi của bạn">
+					</div>
+					<p>(*) Mandatory</p>
+					<div class="btn">
+						<input type="submit" value="previous" name="" class="prev">
+						<input type="submit" value="next" name="" class="next" id="next2">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="tab">
+			<form id="form3" action="#" name="form">
+				<div class="tabtr">
+					<h3>Other Information</h3>
+				</div>
+				<div class="section">
+					<div>
+						<label for="hobbies" class="label">Hobbies *</label> 
+						<textarea id="hobbies" name="hobbies" type="text" class="required" placeholder="nhập vào sở thích"></textarea>
+					</div>
+					<div>
+						<label for="weakness" class="label">Weakness *</label> 
+						<textarea id="weakness" name="weakness" type="text" class="required" placeholder="nhập vào sở đoản"></textarea>
+					</div>
+					<div class="btn">
+						<input type="submit" value="Previous" name="" class="prev" >
+						<input type="submit" value="Next" name="" class="next" id="next3">
+					</div>
+					<p>(*) Mandatory</p>
+				</div>
+			</form>
+		</div>
+		<div class="tab">
+			<form id="form4" action="#" name="form">
+				<div class="tabtr">
+					<h3>Finish</h3>
+				</div>
+				<div class="section">
+					<input id="acceptTerms" name="acceptTerms" type="checkbox" class="required checkcuoi"> 
+					<label for="acceptTerms"  class="label">I agree with the Terms and Conditions.</label> 
+					<div class="btn">
+						<input type="submit" value="Previous" name="" class="prev">
+						<input type="submit" value="Finish" name="" class="next" id="next4">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
