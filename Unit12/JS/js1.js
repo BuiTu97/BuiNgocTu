@@ -34,7 +34,6 @@ $(document).ready(function(){
             $(this).parents('.tab').next().children().children().show();
             $('h3').css("background","#DDDDDD");
             $(this).parents('.tab').next().children().children('.tabtr').children('h3').css("background","blue");
-        }
         $('.theh1').click(function(){
                 $('.section').hide();
                 $(this).parent().next().show();
@@ -47,6 +46,8 @@ $(document).ready(function(){
                 $('h3').css("background","#DDDDDD");
                 $(this).css("background","blue");
             });
+        }
+        
 
     });
     $("#next2").click(function(e){
@@ -61,7 +62,7 @@ $(document).ready(function(){
                 },
                 age:{
                     required: true,
-                    min: 18
+                    // min: 18
                 },
             },
             messages:{
@@ -74,58 +75,34 @@ $(document).ready(function(){
                 address:"Vui lòng nhập vào địa chỉ",
                 age:{
                     required:" vui lòng nhập vào tuổi của bạn",
-                    min: "bạn chưa đủ 18 tuổi, bạn còn quá trẻ"
+                    // min: "bạn chưa đủ 18 tuổi, bạn còn quá trẻ"
                 },
             }
         });
         if ($("#form2").valid()) {
-            e.preventDefault()
-            $(this).parents('.tab').next().children().children().show();
-            $('h3').css("background","#DDDDDD");
-            $(this).parents('.tab').next().children().children('.tabtr').children('h3').css("background","blue");
-        }
+            // e.preventDefault()
+            // $(this).parents('.tab').next().children().children().show();
+            // $('h3').css("background","#DDDDDD");
+            // $(this).parents('.tab').next().children().children('.tabtr').children('h3').css("background","blue");
         $('.theh2').click(function(){
                 $('.section').hide();
                 $(this).parent().next().show();
                 $('h3').css("background","#DDDDDD");
                 $(this).css("background","blue");
             });
-        $('.theh3').click(function(){
-                $('.section').hide();
-                $(this).parent().next().show();
-                $('h3').css("background","#DDDDDD");
-                $(this).css("background","blue");
-            });
-        
-    });
-    $("#next3").click(function(e){
-        $("#form3").validate({
-            rules:{
-                hobbies:{
-                    required: true,
-                    minlength: 5
-                },
-                weakness:{
-                    required: true,
-                    minlength: 5
-                }
-            },
-            messages:{
-                hobbies:{
-                    required: "vui lòng nhập vào sở thích",
-                    minlength: "tối thiểu 5 kí tự"
-                },
-                weakness:{
-                    required: "vui lòng nhập vào sở đoản",
-                    minlength: "tối thiểu 5 kí tự"
-                }
-            }
-        });
-        if ($("#form3").valid()) {
+        if($('#age').val()>= 18){
             e.preventDefault()
-            $(this).parents('.tab').next().children().children().show();
+            
+            $(this).parents('.tab').next().next().children().children().show();
             $('h3').css("background","#DDDDDD");
+            $(this).parents('.tab').next().next().children().children('.tabtr').children('h3').css("background","blue");
+        }else{
+            e.preventDefault()
+
+            $(this).parents('.tab').next().children().children().show();
+             $('h3').css("background","#DDDDDD");
             $(this).parents('.tab').next().children().children('.tabtr').children('h3').css("background","blue");
+
         }
         $('.theh3').click(function(){
                 $('.section').hide();
@@ -133,14 +110,63 @@ $(document).ready(function(){
                 $('h3').css("background","#DDDDDD");
                 $(this).css("background","blue");
             });
-        $('.theh4').click(function(){
-                $('.section').hide();
-                $(this).parent().next().show();
-                $('h3').css("background","#DDDDDD");
-                $(this).css("background","blue");
-            });
+        
+    }
+        
         
     });
+    $('.prev3').click(function(e){
+        e.preventDefault();
+                $('.section').hide();
+        
+        $(this).parents('.tab').prev().children().children().show();
+            $('h3').css("background","#DDDDDD");
+            $(this).parents('.tab').prev().children().children('.tabtr').children('h3').css("background","blue");
+    });
+    // $("#next3").click(function(e){
+        // $("#form3").validate({
+        //     rules:{
+        //         hobbies:{
+        //             required: true,
+        //             minlength: 5
+        //         },
+        //         weakness:{
+        //             required: true,
+        //             minlength: 5
+        //         }
+        //     },
+        //     messages:{
+        //         hobbies:{
+        //             required: "vui lòng nhập vào sở thích",
+        //             minlength: "tối thiểu 5 kí tự"
+        //         },
+        //         weakness:{
+        //             required: "vui lòng nhập vào sở đoản",
+        //             minlength: "tối thiểu 5 kí tự"
+        //         }
+        //     }
+        // });
+        // if ($("#age").val()) {
+        //     e.preventDefault()
+        //     $(this).parents('.tab').next().children().children().show();
+        //     $('h3').css("background","#DDDDDD");
+        //     $(this).parents('.tab').next().children().children('.tabtr').children('h3').css("background","blue");
+       // $('.theh3').click(function(){
+       //          $('.section').hide();
+       //          $(this).parent().next().show();
+       //          $('h3').css("background","#DDDDDD");
+       //          $(this).css("background","blue");
+       //      });
+       //  $('.theh4').click(function(){
+       //          $('.section').hide();
+       //          $(this).parent().next().show();
+       //          $('h3').css("background","#DDDDDD");
+       //          $(this).css("background","blue");
+       //      });
+        // }
+        
+        
+    // });
     $("#next4").click(function(e){
         $("#form4").validate({
             rules:{
@@ -156,13 +182,21 @@ $(document).ready(function(){
             $('h3').css("background","#DDDDDD");
             $(this).parents('.tab').next().children().children('.tabtr').children('h3').css("background","blue");
             alert("Thành Công");
-        }
-        $('.theh4').click(function(){
+         $('.theh4').click(function(){
                 $('.section').hide();
                 $(this).parent().next().show();
                 $('h3').css("background","#DDDDDD");
                 $(this).css("background","blue");
             });
+         $('.prev4').click(function(e){
+            e.preventDefault()
+            $('.section').hide();
+        $(this).parents('.tab').prev().prev().children().children().show();
+        $('h3').css("background","#DDDDDD");
+        $(this).parents('.tab').prev().prev().children().children('.tabtr').children('h3').css("background","blue");
+         });
+        }
+       
        
     });
       $('.prev').click(function(e){
