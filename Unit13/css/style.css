@@ -1,0 +1,149 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.header{
+background-image:url(../images/bg-masthead.jpg);
+padding: 1% 0 10% 0;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.menu a{
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}
+.menu a:hover{
+	color: #f5422bf0;
+}
+.tdchinh h2{
+	font-size: 40px;
+	color: white;
+	margin-top: 15%;
+	font-weight: bold;
+}
+.tdchinh hr,.content_footer hr{
+	margin: 5% auto;
+}
+.content_footer h3{
+	font-weight: bold;
+}
+.tdchinh p{
+	padding: 0 4%;
+    color: white;
+}
+.tdchinh button{
+    background-color: #ff0000e0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 2%;
+    border-radius: 23px;
+}
+.tdchinh button:hover{
+	border: 2px solid #ff0000e0;
+	color: #ff0000e0;
+	background-color: white;
+}
+.tdchinh h3{
+	font-weight: bold;
+}
+.content2{
+	background-color: #f5422bf0;
+	padding-top: 6%;
+	padding-bottom: 4%;
+}
+.content2 h3 {
+	color: white;
+	font-weight: bold;
+}
+.content_service i{
+	font-size: 40px;
+	color: #f5422bf0;
+}
+h3{
+	font-weight: normal;
+}
+.content_service h3{
+	font-size: 22px;
+}
+.service,.footer{
+	padding-top:6%;
+	padding-bottom: 6%;
+}
+.album img{
+	padding: 0;
+    border-right: 1px solid #ddd3d3;
+    border-bottom: 1px solid #ddd3d3;
+}
+.content5{
+	background-color: #0b0a0ad6;
+	padding: 7% 0;
+}
+.content_footer p{
+	color: #443c3c;
+	padding: 0 2%;
+}
+.contact{
+	padding-left: 9%;
+}
+.contact i{
+	font-size: 30px;
+}
+@media (max-width: 576px){
+	.td{
+		color: #ff2300 !important;
+	}
+	.content5,.content2{
+		padding: 20% 0;
+	}
+	.footer,.service{
+		padding-top: 15%;
+		padding-bottom: 15%;
+	}
+	.content_service p{
+		margin-bottom: 10%;
+	}
+	.header{
+		padding: 10% 0 20% 0;
+	}
+	.contact{
+		padding: 0;
+		margin: 0 auto;
+	}
+
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+	.td{
+		color: #ff2300 !important;
+	}
+	.content2{
+		padding: 10% 0;
+	}
+	.content_service i{
+		font-size: 60px;
+	}
+	.content_service p{
+		margin-bottom: 15%;
+	}
+	.content5{
+		padding: 13% 0;
+	}
+	.contact{
+		padding: 0;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 991px){
+	#menu{
+	background-color: black;
+	}
+	.menu a{
+		color: white;
+	}
+	.contact{
+		padding-top: 1%;
+	}
+}
